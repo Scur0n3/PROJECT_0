@@ -1,57 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Search</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- --------------------------------------
+    -------------------------------------------
+    -------NAVEGACION ENTRE PAGINAS------------
+    -------------------------------------------
+    ------------------------------------------- -->
 
-        <!-- --------------------------------------
-        -------------------------------------------
-        -------NAVEGACION ENTRE PAGINAS------------
-        -------------------------------------------
-        ------------------------------------------- -->
-   
     <div id="nav">
-        <nav>
-            <ul>
-                <li><a href="index2.html">Google Images</a></li>
-                <li><a href="index3.html">Advanced Search</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index2.html">Google Images</a></li>
+          <li><a href="index3.html">Advanced Search</a></li>
+        </ul>
+      </nav>
     </div>
 
-        <!-- --------------------------------------
-        -------------------------------------------
-        -------GRID DEL LOGO DE GOOGLE-------------
-        -------------------------------------------
-        ------------------------------------------- -->
+    <!-- --------------------------------------
+    -------------------------------------------
+    -------GRID DEL LOGO DE GOOGLE-------------
+    -------------------------------------------
+    ------------------------------------------- -->
 
     <div id="container">
-        <div id="grid">
-            <div class="grid-item item1">G</div>
-            <div class="grid-item item2">o</div>
-            <div class="grid-item item3">o</div>
-            <div class="grid-item item4">g</div>
-            <div class="grid-item item5">l</div>
-            <div class="grid-item item6">e</div>
-        </div>
+      <div id="grid">
+        <div class="grid-item item1">G</div>
+        <div class="grid-item item2">o</div>
+        <div class="grid-item item3">o</div>
+        <div class="grid-item item4">g</div>
+        <div class="grid-item item5">l</div>
+        <div class="grid-item item6">e</div>
+      </div>
     </div>
 
 
+         <!-- --------------------------------------
+        -------------------------------------------
+        ---------------- FORMULARIO ---------------
+        -------------------------------------------
+        ------------------------------------------- -->
+
+    
+      <form action="https://google.com/search">
+        <div class="container-total">
+          <div class="container-global">
+            <div class="container-inputs">
+
+            <!-- --------------------------------------
+            -------------------------------------------
+            --------------- ICONO DE LUPA -------------
+            -------------------------------------------
+            ------------------------------------------- -->
+
+              <div class="icon">
+                <span class="icon-one">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="search bi bi-search"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 
+                        1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 
+                        1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 
+                        6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                </span>
+              </div>
+
+              <!-- --------------------------------------
+                -------------------------------------------
+                ---------- CUADRO DE BUSQUEDA -------------
+                -------------------------------------------
+                ------------------------------------------- -->
+
+              <div class="in-global">
+                <div class="in">
+                  <input class="intext" type="text" name="q" autocomplete="off"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <!-- --------------------------------------
+                -------------------------------------------
+                ------------------ BOTON ------------------
+                -------------------------------------------
+                ------------------------------------------- -->
+
+        <div class="center">
+          <div id="button">
+            <div class="button-search">
+                <input class="button" type="submit" value="Google Search" />
+            </div>
+            <div class="button-search">
+                <input class="button" type="submit" value="I'm Feeling Lucky" name="btnI"/>
+            </div> 
+          </div>
+        </div>
+      </form>
 
 
 
 
 
 
-
-
-
-
-
-
-</body>
+  </body>
 </html>

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Images</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
         <!-- --------------------------------------
         -------------------------------------------
         -------NAVEGACION ENTRE PAGINAS------------
@@ -15,34 +14,97 @@
         ------------------------------------------- -->
 
     <div id="nav">
-        <nav>
-            <ul>
-                <li><a href="index.html">Search</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Search</a></li>
+        </ul>
+      </nav>
     </div>
 
-
-        <!-- --------------------------------------
+    <!-- --------------------------------------
         -------------------------------------------
         -------GRID DEL LOGO DE GOOGLE-------------
         -------------------------------------------
         ------------------------------------------- -->
 
-
     <div id="container">
-        <div id="grid">
-            <div class="grid-item item1">G</div>
-            <div class="grid-item item2">o</div>
-            <div class="grid-item item3">o</div>
-            <div class="grid-item item4">g</div>
-            <div class="grid-item item5">l</div>
-            <div class="grid-item item6">e</div>
-            <div class="grid-item item7"><span>Images</span></div>
-        </div>
+      <div id="grid">
+        <div class="grid-item item1">G</div>
+        <div class="grid-item item2">o</div>
+        <div class="grid-item item3">o</div>
+        <div class="grid-item item4">g</div>
+        <div class="grid-item item5">l</div>
+        <div class="grid-item item6">e</div>
+        <div class="grid-item item7"><span>Images</span></div>
+      </div>
     </div>
 
+    <!-- --------------------------------------
+        -------------------------------------------
+        ---------------- FORMULARIO ---------------
+        -------------------------------------------
+        ------------------------------------------- -->
 
+    <form action="https://google.com/search">
+      <div class="container-total">
+        <div class="container-global">
+          <div class="container-inputs">
 
-</body>
+            <!-- --------------------------------------
+            -------------------------------------------
+            --------------- ICONO DE LUPA -------------
+            -------------------------------------------
+            ------------------------------------------- -->
+
+            <div class="icon">
+              <span class="icon-one">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor" class="search bi bi-search" viewBox="0 0 24 24">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 
+                    1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 
+                    1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 
+                    6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </span>
+            </div>
+
+                <!-- --------------------------------------
+                -------------------------------------------
+                ---------- CUADRO DE BUSQUEDA -------------
+                -------------------------------------------
+                ------------------------------------------- -->
+
+            <div class="in-global">
+              <div class="in">
+                <input class="intext" type="text" name="q" autocomplete="off" />
+                <input type="hidden" name="tbm" value="isch" />
+              </div>
+            </div>
+
+                <!-- --------------------------------------
+                -------------------------------------------
+                ------------------ BOTON ------------------
+                -------------------------------------------
+                ------------------------------------------- -->
+
+            <button class="button1" type="submit">
+              <div class="container-button">
+                <span class="button-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="search1 bi bi-search" viewBox="0 0 24 24">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397                                           1.398h-.001c.03.04.062.078.098.115l3.85 
+                        3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 
+                        1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 
+                        0 5.5 5.5 0 0 1 11 0z" />
+                  </svg>
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
