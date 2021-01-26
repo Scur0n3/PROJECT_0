@@ -1,35 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced Search</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-        <!-- --------------------------------------
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- --------------------------------------
         -------------------------------------------
         -------NAVEGACION ENTRE PAGINAS------------
         -------------------------------------------
         ------------------------------------------- -->
 
     <div id="nav">
-        <div class="background-advanced">
-            <img src="image.PNG" alt="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Search</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="background-advanced">
+        <img src="image.PNG" alt="logo" />
+        <nav>
+          <ul>
+            <li><a href="index.html">Search</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
-        <!-- --------------------------------------
+    <p id="title">Advanced search</p>
+    <hr />
+
+    <!-- --------------------------------------
         -------------------------------------------
         ---------- ESTRUCTURA DEL GRID ------------
         -------------------------------------------
         ------------------------------------------- -->
 
-</body>
+    <form action="https://google.com/search?as">
+      <div id="grid-as">
+        <p class="subtitle">Find pages with...</p>
+        <div></div>
+        <p class="subtitle column3">To do this in the search box.</p>
+
+        <!--Todas las palabras -->
+        <label class="label gitem">All these words:</label>
+        <input class="in1 gitem" type="text" name="as_q" autocomplete="off" />
+        <div class="example column3">
+          <div class="conten-example">
+            Type the important words:
+            <span class="muestra">tri-colour rat terrier</span>.
+          </div>
+        </div>
+
+        <!--Palabra o frase exacta -->
+        <label class="label gitem">This exact word or phrase:</label>
+        <input class="in1 gitem" type="text" name="as_epq" autocomplete="off" />
+        <div class="example column3">
+          <div class="conten-example">
+            Put exact words in quotes:
+            <span class="muestra">"rat terrier"</span>.
+          </div>
+        </div>
+
+        <!--cualquier palabra -->
+        <label class="label gitem">Any of these words:</label>
+        <input class="in1 gitem" type="text" name="as_oq" autocomplete="off" />
+        <div class="example column3">
+          <div class="conten-example">
+            Type OR between all the words you want:
+            <span class="muestra">miniature OR standard</span>.
+          </div>
+        </div>
+
+        <!--Niguna de estas palabras -->
+        <label class="label gitem">None of these words:</label>
+        <input class="in1 gitem" type="text" name="as_eq" autocomplete="off" />
+        <div class="example column3">
+          <div class="conten-example">
+            Put a minus sign just before words that you don't want:
+            <span class="muestra">-rodent</span>.
+          </div>
+        </div>
+      </div>
+
+      <input class="button-advan" type="submit" value="Advanced Search" />
+    </form>
+
+    <hr/>
+  </body>
 </html>
